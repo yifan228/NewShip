@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ec2177870cda6f478358ab97a3b3363, type: 3}
+  m_Name: weapon_basic
+  m_EditorClassIdentifier: 
+  weaponData:
+    WeaponName: "\u57FA\u790E\u6B66\u5668"
+    WeaponKeyString: weapon_basic
+    pickTargetType: 1
+    BulleteKeyString: basic_straithoming_bulltet
+    ShootAngleFrom: 0
+    ShootAngleTo: 0
+    shootFX: {fileID: 0}
+    CD: 5
+    MoveRecoil: 0
+    RotateRecoil: 0
+    Magzine: 30

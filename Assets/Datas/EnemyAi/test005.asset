@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00c1cf240d562842903450de4188316, type: 3}
+  m_Name: test005
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 357025870464942893
+  - rid: 357025870464942894
+  - rid: 357025870464942895
+  - rid: 357025870464942896
+  - rid: 357025870464942897
+  - rid: 357025870464942898
+  - rid: 357025870464942899
+  - rid: 357025870464942900
+  EntryAction:
+    rid: 357025870464942893
+  references:
+    version: 2
+    RefIds:
+    - rid: 357025870464942893
+      type: {class: EntryAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942901
+        LifeTime: 1
+        Delay: 0
+        CD: 0
+    - rid: 357025870464942894
+      type: {class: MoveToPlayerAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942902
+        LifeTime: 1
+        Delay: 0
+        CD: 0
+        chaseDistance: 0
+    - rid: 357025870464942895
+      type: {class: ConditionDistanceToPlayerAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942903
+        - rid: 357025870464942904
+        LifeTime: 0
+        Delay: 0
+        CD: 0
+        distance: 50
+    - rid: 357025870464942896
+      type: {class: MoveToPlayerAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942905
+        LifeTime: 5
+        Delay: 0
+        CD: 1
+        chaseDistance: 6
+    - rid: 357025870464942897
+      type: {class: RepeatAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942906
+        - rid: 357025870464942907
+        - rid: 357025870464942908
+        - rid: 357025870464942909
+        LifeTime: 0
+        Delay: 0
+        CD: 0
+        repeatTimes: 2
+    - rid: 357025870464942898
+      type: {class: ShootPlayerAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches: []
+        LifeTime: 5
+        Delay: 0
+        CD: 1
+        shootInterval: 0
+        bulletCount: 0
+    - rid: 357025870464942899
+      type: {class: StationaryNoAimAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches: []
+        LifeTime: 10
+        Delay: 0
+        CD: 0
+    - rid: 357025870464942900
+      type: {class: SpreadShotAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches: []
+        LifeTime: 10
+        Delay: 0
+        CD: 1
+        shootInterval: 1
+        spreadAngle: 360
+        bulletCount: 6
+    - rid: 357025870464942901
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: output
+        action:
+          rid: 357025870464942894
+    - rid: 357025870464942902
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: output
+        action:
+          rid: 357025870464942895
+    - rid: 357025870464942903
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: yes
+        action:
+          rid: 357025870464942896
+    - rid: 357025870464942904
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: yes
+        action:
+          rid: 357025870464942898
+    - rid: 357025870464942905
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: output
+        action:
+          rid: 357025870464942897
+    - rid: 357025870464942906
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: no
+        action:
+          rid: 357025870464942896
+    - rid: 357025870464942907
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: no
+        action:
+          rid: 357025870464942898
+    - rid: 357025870464942908
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: yes
+        action:
+          rid: 357025870464942899
+    - rid: 357025870464942909
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: yes
+        action:
+          rid: 357025870464942900

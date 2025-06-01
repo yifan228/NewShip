@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00c1cf240d562842903450de4188316, type: 3}
+  m_Name: test002
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 357025870464942865
+  - rid: 357025870464942866
+  - rid: 357025870464942867
+  - rid: 357025870464942868
+  - rid: 357025870464942869
+  - rid: 357025870464942870
+  EntryAction:
+    rid: 357025870464942865
+  references:
+    version: 2
+    RefIds:
+    - rid: 357025870464942865
+      type: {class: EntryAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942871
+        - rid: 357025870464942872
+        TriggerRange: 0
+        LifeTime: 1
+        Delay: 0
+        CD: 0
+    - rid: 357025870464942866
+      type: {class: MoveToPlayerAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942873
+        TriggerRange: 0
+        LifeTime: 5
+        Delay: 0
+        CD: 0
+        chaseDistance: 6
+    - rid: 357025870464942867
+      type: {class: RepeatAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches:
+        - rid: 357025870464942874
+        - rid: 357025870464942875
+        - rid: 357025870464942876
+        - rid: 357025870464942877
+        TriggerRange: 0
+        LifeTime: 0
+        Delay: 0
+        CD: 0
+        repeatTimes: 2
+        currentCount: 0
+    - rid: 357025870464942868
+      type: {class: ShootPlayerAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches: []
+        TriggerRange: 0
+        LifeTime: 5
+        Delay: 0
+        CD: 1
+        shootInterval: 0
+        bulletCount: 0
+    - rid: 357025870464942869
+      type: {class: StationaryNoAimAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches: []
+        TriggerRange: 0
+        LifeTime: 10
+        Delay: 0
+        CD: 0
+    - rid: 357025870464942870
+      type: {class: SpreadShotAction, ns: , asm: Assembly-CSharp}
+      data:
+        branches: []
+        TriggerRange: 0
+        LifeTime: 10
+        Delay: 0
+        CD: 1
+        shootInterval: 1
+        spreadAngle: 360
+        bulletCount: 6
+    - rid: 357025870464942871
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: output
+        action:
+          rid: 357025870464942866
+    - rid: 357025870464942872
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: output
+        action:
+          rid: 357025870464942868
+    - rid: 357025870464942873
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: output
+        action:
+          rid: 357025870464942867
+    - rid: 357025870464942874
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: no
+        action:
+          rid: 357025870464942866
+    - rid: 357025870464942875
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: no
+        action:
+          rid: 357025870464942868
+    - rid: 357025870464942876
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: yes
+        action:
+          rid: 357025870464942869
+    - rid: 357025870464942877
+      type: {class: Branch, ns: , asm: Assembly-CSharp}
+      data:
+        key: yes
+        action:
+          rid: 357025870464942870

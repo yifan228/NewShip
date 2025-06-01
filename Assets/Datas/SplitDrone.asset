@@ -1,0 +1,139 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c742a15fbef303847940917061273de1, type: 3}
+  m_Name: SplitDrone
+  m_EditorClassIdentifier: 
+  Data:
+  - ProjectileKeyString: basic_bullete
+    DroneProjectileType: 0
+    LifeTime: 10
+    Template: 0
+    TriggerDmgType: 0
+    DurationDamageCD: 0
+    DurationDamageMaxCount: 0
+    View: {fileID: 0}
+    ObjSize: {x: 1, y: 1, z: 1}
+    MovementType: 1
+    MaxSpeed: 50
+    Acceleration: 0
+    MaxAngularSpeed: 0
+    AngularAcceleration: 0
+    PermissionCount: 1
+    HitFX: {fileID: 0}
+    onHitSkill: 0
+    ExplodeRange: 0
+    ExplodeFX: {fileID: 0}
+    Out_EplodeHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_EplodeArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+    SplitProjectileKeyString: 
+    SplitAcount: 0
+    AngleFrom: 0
+    AngleTo: 0
+    Out_SplitHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_SplitArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+    FieldProjectileKeyString: 
+    FieldRange: 2
+    FieldTime: 2
+    Out_FieldHpDmg:
+      Dmg: 2
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_FieldArmorDmg:
+      Dmg: 0
+      OnCrash: 2
+      SuperCrashDmg_Percentage: 0
+    SecondaryHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    SecondaryArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+  - ProjectileKeyString: basic_bullete_explode
+    DroneProjectileType: 0
+    LifeTime: 10
+    Template: 0
+    TriggerDmgType: 0
+    DurationDamageCD: 0
+    DurationDamageMaxCount: 0
+    View: {fileID: 0}
+    ObjSize: {x: 1, y: 1, z: 1}
+    MovementType: 1
+    MaxSpeed: 50
+    Acceleration: 0
+    MaxAngularSpeed: 0
+    AngularAcceleration: 0
+    PermissionCount: 1
+    HitFX: {fileID: 0}
+    onHitSkill: 1
+    ExplodeRange: 0
+    ExplodeFX: {fileID: 0}
+    Out_EplodeHpDmg:
+      Dmg: 10
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_EplodeArmorDmg:
+      Dmg: 1
+      OnCrash: 10
+      SuperCrashDmg_Percentage: 0
+    SplitProjectileKeyString: 
+    SplitAcount: 0
+    AngleFrom: 0
+    AngleTo: 0
+    Out_SplitHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_SplitArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+    FieldProjectileKeyString: 
+    FieldRange: 2
+    FieldTime: 2
+    Out_FieldHpDmg:
+      Dmg: 2
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_FieldArmorDmg:
+      Dmg: 0
+      OnCrash: 2
+      SuperCrashDmg_Percentage: 0
+    SecondaryHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    SecondaryArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0

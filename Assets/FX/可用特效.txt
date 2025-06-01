@@ -1,0 +1,39 @@
+﻿trail_blue 系列
+rocket
+fireball_blue
+magic_sphere_blue
+Uzi_blue
+vfx_projectile_laserblue
+    projectile_bubbleblue
+    projectile_spinblue
+    projectile_arrow_blue
+    projectile_spell01orange
+
+
+
+
+
+field
+
+ready_attack
+electricity
+plazma_ball
+
+
+
+
+可用explosion
+explosion_1
+
+
+
+split
+
+
+不知道為何不能用
+vfx_Hit_LaserBlue
+vfx_Hit_Radioactive
+vfx_Hit_Spell01Violet
+vfx_Hit_Spell01Orange
+有趣
+vfx_Hit_Carrot(Clone)

@@ -1,0 +1,1 @@
+{"hpdata":{"Armormax":10.0,"ArmorrecoverSpd":1.0,"ArmorminReSpd":0.0,"ArmorstartRecoverTime":5.0,"ArmorResistance":0.0,"MaxHp":100.0},"hpdmgData":{"Dmg":10.0,"CriticalDamage_Percentage":0.0,"Critical_Percentage":0.0,"IgnoreArmor":0.0},"armorDmgData":{"Dmg":1.0,"OnCrash":1.0,"SuperCrashDmg_Percentage":0.0},"debufData":{"type":0,"Velocity":0.0,"Position":0.0,"HitRate":0.0}}

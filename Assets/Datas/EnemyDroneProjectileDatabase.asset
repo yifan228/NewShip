@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c742a15fbef303847940917061273de1, type: 3}
+  m_Name: EnemyDroneProjectileDatabase
+  m_EditorClassIdentifier: 
+  Data:
+  - ProjectileKeyString: enemy_basic_bullete
+    DroneProjectileType: 0
+    LifeTime: 20
+    Template: 0
+    TriggerDmgType: 0
+    DurationDamageCD: 0
+    DurationDamageMaxCount: 0
+    View: {fileID: 5662118794944764412, guid: 706504128c550034399cf18eacd0d03b, type: 3}
+    ObjSize: {x: 1, y: 1, z: 1}
+    MovementType: 1
+    MaxSpeed: 20
+    Acceleration: 0
+    MaxAngularSpeed: 0
+    AngularAcceleration: 0
+    PermissionCount: 1
+    HitFX: {fileID: 9166628806383970387, guid: 26f53516b6910844bb0b5dc0cf156b39, type: 3}
+    onHitSkill: 0
+    ExplodeProjectileKeyString: 
+    ExplodeRange: 0
+    Out_EplodeHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_EplodeArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+    SplitProjectileKeyString: 
+    SplitAcount: 0
+    AngleFrom: 0
+    AngleTo: 0
+    Out_SplitHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_SplitArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+    FieldProjectileKeyString: 
+    FieldRange: 0
+    FieldTime: 0
+    Out_FieldHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    Out_FieldArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0
+    SecondaryHpDmg:
+      Dmg: 0
+      CriticalDamage_Percentage: 0
+      Critical_Percentage: 0
+      IgnoreArmor: 0
+    SecondaryArmorDmg:
+      Dmg: 0
+      OnCrash: 0
+      SuperCrashDmg_Percentage: 0

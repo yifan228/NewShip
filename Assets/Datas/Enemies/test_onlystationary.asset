@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a419ebd07a9632e47a17fe2ee20cb116, type: 3}
+  m_Name: test_onlystationary
+  m_EditorClassIdentifier: 
+  Data:
+    Name: "\u6E2C\u8A66\u7528\u6728\u838A"
+    KeyString: test_onlystationary
+    Sprite: {fileID: 4801227835787818748, guid: f60dff3c715520047b4e50fe20612185, type: 3}
+    MotionPattern: 1
+    AttackPattern: 0
+    AIData: {fileID: 11400000, guid: 920a8ad454919624f80b65f81ba01e37, type: 2}
+    PickTargetType: 2
+    FusilladeCount: 2
+    DroneCount: 2
+    DroneAngle: 10
+    DroneKeyString: enemy_basic_bullete
+    MoveAndRotateData:
+      Range: 0
+      AngularRange: 0
+      MaxMoveSpeed: 0
+      MinMoveSpeed: 0
+      Acceleration: 0
+      Deceleration: 0
+      MaxAngularSpeed: 0
+      MinAngularSpeed: 0
+      RotateAcceleration: 0
+      RotateDeceleration: 0
+    HPdata:
+      Armormax: 10
+      ArmorrecoverSpd: 1
+      ArmorminReSpd: 0.3
+      ArmorstartRecoverTime: 5
+      ArmorResistance: 0
+      MaxHp: 10
+    HpDamage: 1
+    ArmorDamage: 1
+    Crash: 1
+    FirePosition: {x: 0, y: 1}

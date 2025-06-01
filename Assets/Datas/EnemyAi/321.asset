@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a00c1cf240d562842903450de4188316, type: 3}
+  m_Name: 321
+  m_EditorClassIdentifier: 
+  actions:
+  - rid: 357025870464942341
+  - rid: 357025870464942342
+  - rid: 357025870464942343
+  EntryAction:
+    rid: 357025870464942341
+  references:
+    version: 2
+    RefIds:
+    - rid: 357025870464942341
+      type: {class: EntryAction, ns: , asm: Assembly-CSharp}
+      data:
+        nextActions:
+        - rid: 357025870464942342
+        - rid: 357025870464942343
+        TriggerRange: 100
+        LifeTime: 1
+        Delay: 0
+        CD: 0
+    - rid: 357025870464942342
+      type: {class: StationaryNoAimAction, ns: , asm: Assembly-CSharp}
+      data:
+        nextActions: []
+        TriggerRange: 0
+        LifeTime: 100
+        Delay: 0
+        CD: 0
+        SpreadCount: 0
+        SpreadAngle: 0
+    - rid: 357025870464942343
+      type: {class: SpreadShotAction, ns: , asm: Assembly-CSharp}
+      data:
+        nextActions: []
+        TriggerRange: 1000
+        LifeTime: 100
+        Delay: 0
+        CD: 0
+        shootInterval: 3
+        spreadAngle: 360
+        bulletCount: 6

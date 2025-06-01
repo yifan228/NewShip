@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b9f3a6857241d4398f6691b1d8e07f, type: 3}
+  m_Name: Basic_Enemy
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - rid: 357025870464942150
+  - rid: 357025870464942151
+  - rid: 357025870464942152
+  edges:
+  - GUID: a8aefe09-9f2c-41ad-b6c5-7bcfa04f29bd
+    owner: {fileID: 11400000}
+    inputNodeGUID: 644db7c4-65ce-4979-bb6a-2c677215deb1
+    outputNodeGUID: c5ad0370-73a9-409c-9dd0-c9a3027775cd
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 4e170c6b-0fc1-4d97-9ea9-5733969eb418
+    owner: {fileID: 11400000}
+    inputNodeGUID: 376e734e-e409-4454-96ab-2709e0cac4f6
+    outputNodeGUID: c5ad0370-73a9-409c-9dd0-c9a3027775cd
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements:
+  - position:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 150
+      height: 200
+    opened: 1
+    editorType:
+      serializedType: GraphProcessor.ExposedParameterView, com.alelievr.NodeGraphProcessor.Editor,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: 195, y: 65, z: 0}
+  scale: {x: 1.15, y: 1.15, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 357025870464942150
+      type: {class: StationaryNoAimNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 644db7c4-65ce-4979-bb6a-2c677215deb1
+        computeOrder: 1
+        position:
+          serializedVersion: 2
+          x: 433.99783
+          y: -26.000008
+          width: 183
+          height: 190
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 100
+          Delay: 0
+          CD: 0
+    - rid: 357025870464942151
+      type: {class: EnemyAIEntryNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: c5ad0370-73a9-409c-9dd0-c9a3027775cd
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: 146.65218
+          y: 121.695656
+          width: 195
+          height: 190
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        output: 0
+        input: 0
+        action:
+          branches: []
+          LifeTime: 1
+          Delay: 0
+          CD: 0
+    - rid: 357025870464942152
+      type: {class: SpreadShotNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 376e734e-e409-4454-96ab-2709e0cac4f6
+        computeOrder: 2
+        position:
+          serializedVersion: 2
+          x: 423.63333
+          y: 227.51228
+          width: 183
+          height: 246
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 100
+          Delay: 0
+          CD: 5
+          bulleteKeyString: enemy_basic_bullete
+          shootInterval: 3
+          spreadAngle: 360
+          bulleteCount: 6

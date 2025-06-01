@@ -1,0 +1,339 @@
+fileFormatVersion: 2
+guid: 58abe7e7f2a873148ba02197a2c8fb1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2947007370854774165
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_0"
+  - first:
+      213: 3687058634485696970
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_1"
+  - first:
+      213: -4723158044377170695
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_2"
+  - first:
+      213: 8798569912104557327
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_3"
+  - first:
+      213: 182525443479172729
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_4"
+  - first:
+      213: -7951393043424411295
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_5"
+  - first:
+      213: 5509663994968636187
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_6"
+  - first:
+      213: -4327068151676096576
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_7"
+  - first:
+      213: 1837539400284755736
+    second: "ChatGPT Image 2025\u5E745\u670830\u65E5 \u4E0B\u534803_17_18_8"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: test_weapon1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 672
+        width: 270
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a4ebdf8602a17d0800000000000000
+      internalID: -2947007370854774165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon2
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 664
+        width: 259
+        height: 355
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac98e8e0b401b2330800000000000000
+      internalID: 3687058634485696970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon3
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 672
+        width: 387
+        height: 339
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcbed278c8f37eb0800000000000000
+      internalID: -4723158044377170695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 392
+        width: 333
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0b9e6ed7bcca1a70800000000000000
+      internalID: 8798569912104557327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon5
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 384
+        width: 275
+        height: 259
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976fb0d7ce5788200800000000000000
+      internalID: 182525443479172729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon6
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 348
+        width: 351
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1610d21c72af6a190800000000000000
+      internalID: -7951393043424411295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon7
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 87
+        width: 297
+        height: 260
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b7dd34632467c40800000000000000
+      internalID: 5509663994968636187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon8
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 32
+        width: 318
+        height: 283
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cfa07c117a23f3c0800000000000000
+      internalID: -4327068151676096576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test_weapon9
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 8
+        width: 275
+        height: 302
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 817d1ce4950408910800000000000000
+      internalID: 1837539400284755736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a549db25ba4ea7740acb67ce0b8d2eed
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      test_weapon1: -2947007370854774165
+      test_weapon2: 3687058634485696970
+      test_weapon3: -4723158044377170695
+      test_weapon4: 8798569912104557327
+      test_weapon5: 182525443479172729
+      test_weapon6: -7951393043424411295
+      test_weapon7: 5509663994968636187
+      test_weapon8: -4327068151676096576
+      test_weapon9: 1837539400284755736
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

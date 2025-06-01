@@ -1,0 +1,297 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b9f3a6857241d4398f6691b1d8e07f, type: 3}
+  m_Name: Enemy_0
+  m_EditorClassIdentifier: 
+  serializedNodes: []
+  nodes:
+  - rid: 357025870464942858
+  - rid: 357025870464942859
+  - rid: 357025870464942860
+  - rid: 357025870464942861
+  - rid: 357025870464942863
+  - rid: 357025870464942864
+  - rid: 357025870464942891
+  - rid: 357025870464942892
+  edges:
+  - GUID: 9237b442-a668-433c-a724-f3c7093db49b
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2a653187-c2c4-4f47-9f0d-2462cbe804b5
+    outputNodeGUID: 2616e615-6cbe-41f5-b8a5-ba28a2460835
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 5b06a985-c7c2-4a40-bc01-92b600bdb3db
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2616e615-6cbe-41f5-b8a5-ba28a2460835
+    outputNodeGUID: 2a653187-c2c4-4f47-9f0d-2462cbe804b5
+    inputFieldName: input
+    outputFieldName: no
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 917d31a3-e661-4c91-8bbb-24357ae1661f
+    owner: {fileID: 11400000}
+    inputNodeGUID: 824469d2-9d2f-4384-8c72-a9951981d667
+    outputNodeGUID: 2a653187-c2c4-4f47-9f0d-2462cbe804b5
+    inputFieldName: input
+    outputFieldName: no
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: f6cea892-6d3e-4860-99fc-9a4c747a888c
+    owner: {fileID: 11400000}
+    inputNodeGUID: 3c22488d-ca08-43a3-838f-7e72cee2922c
+    outputNodeGUID: 2a653187-c2c4-4f47-9f0d-2462cbe804b5
+    inputFieldName: input
+    outputFieldName: yes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 62bb147a-d65e-45eb-8f01-37913d880f26
+    owner: {fileID: 11400000}
+    inputNodeGUID: b58f24e0-4b9a-4f22-874a-b71175297a22
+    outputNodeGUID: 2a653187-c2c4-4f47-9f0d-2462cbe804b5
+    inputFieldName: input
+    outputFieldName: yes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 53e8510c-00ed-4733-9228-9719a23d0533
+    owner: {fileID: 11400000}
+    inputNodeGUID: 398b44c4-5d27-4a89-9a53-77aed0476e2b
+    outputNodeGUID: 5ee06026-4050-4f8b-95a8-2d33341d93a2
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: c4dd5dd4-a6ae-41c2-bc7e-f24788f34f4e
+    owner: {fileID: 11400000}
+    inputNodeGUID: 5b6fcc63-30fa-4504-9823-239acfc89acf
+    outputNodeGUID: 398b44c4-5d27-4a89-9a53-77aed0476e2b
+    inputFieldName: input
+    outputFieldName: output
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 9585e1e9-7123-4c40-b887-738b8afed779
+    owner: {fileID: 11400000}
+    inputNodeGUID: 2616e615-6cbe-41f5-b8a5-ba28a2460835
+    outputNodeGUID: 5b6fcc63-30fa-4504-9823-239acfc89acf
+    inputFieldName: input
+    outputFieldName: yes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 7ffd94b8-e665-4609-b860-a7045d1d9f65
+    owner: {fileID: 11400000}
+    inputNodeGUID: 824469d2-9d2f-4384-8c72-a9951981d667
+    outputNodeGUID: 5b6fcc63-30fa-4504-9823-239acfc89acf
+    inputFieldName: input
+    outputFieldName: yes
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  - GUID: 2151a532-c4c1-4a3d-8414-69c50d742515
+    owner: {fileID: 11400000}
+    inputNodeGUID: 398b44c4-5d27-4a89-9a53-77aed0476e2b
+    outputNodeGUID: 5b6fcc63-30fa-4504-9823-239acfc89acf
+    inputFieldName: input
+    outputFieldName: no
+    inputPortIdentifier: 
+    outputPortIdentifier: 
+  groups: []
+  stackNodes: []
+  pinnedElements: []
+  exposedParameters: []
+  serializedParameterList: []
+  stickyNotes: []
+  nodeInspectorReference: {fileID: 0}
+  position: {x: -564, y: -338, z: 0}
+  scale: {x: 1.15, y: 1.15, z: 1}
+  references:
+    version: 2
+    RefIds:
+    - rid: 357025870464942858
+      type: {class: EnemyAIEntryNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 5ee06026-4050-4f8b-95a8-2d33341d93a2
+        computeOrder: 0
+        position:
+          serializedVersion: 2
+          x: -241.44
+          y: 219
+          width: 183
+          height: 171
+        expanded: 1
+        debug: 0
+        nodeLock: 0
+        output: 0
+        input: 0
+        action:
+          branches: []
+          LifeTime: 1
+          Delay: 0
+          CD: 0
+    - rid: 357025870464942859
+      type: {class: ChasePlayerNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 2616e615-6cbe-41f5-b8a5-ba28a2460835
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: 553.4367
+          y: 132.58221
+          width: 190
+          height: 209
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 5
+          Delay: 0
+          CD: 1
+          nearDistance: 20
+          speed: 0
+    - rid: 357025870464942860
+      type: {class: ShootPlayerNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 824469d2-9d2f-4384-8c72-a9951981d667
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: 525.2174
+          y: 460.2609
+          width: 283
+          height: 209
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 5
+          Delay: 0
+          CD: 1
+          bulletCount: 1
+          bulleteKeyString: enemy_basic_bullete
+    - rid: 357025870464942861
+      type: {class: RepeatNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 2a653187-c2c4-4f47-9f0d-2462cbe804b5
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: 829.7001
+          y: 325
+          width: 153
+          height: 118
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        yes: 0
+        no: 0
+        repeatTimes: 2
+    - rid: 357025870464942863
+      type: {class: StationaryNoAimNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 3c22488d-ca08-43a3-838f-7e72cee2922c
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: 1073
+          y: 272
+          width: 151
+          height: 94
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 10
+          Delay: 0
+          CD: 0
+    - rid: 357025870464942864
+      type: {class: SpreadShotNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: b58f24e0-4b9a-4f22-874a-b71175297a22
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: 1058
+          y: 479
+          width: 100
+          height: 100
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 10
+          Delay: 0
+          CD: 1
+          bulleteKeyString: enemy_basic_bullete
+          shootInterval: 1
+          spreadAngle: 360
+          bulleteCount: 6
+    - rid: 357025870464942891
+      type: {class: ChasePlayerNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 398b44c4-5d27-4a89-9a53-77aed0476e2b
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: -8.219275
+          y: 291.58978
+          width: 183
+          height: 209
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        output: 0
+        action:
+          branches: []
+          LifeTime: 1
+          Delay: 0
+          CD: 0
+          nearDistance: 0
+          speed: 10
+    - rid: 357025870464942892
+      type: {class: EnemyAICondition_DistanceToPlayerNode, ns: , asm: Assembly-CSharp-Editor}
+      data:
+        nodeCustomName: 
+        GUID: 5b6fcc63-30fa-4504-9823-239acfc89acf
+        computeOrder: -2
+        position:
+          serializedVersion: 2
+          x: 255
+          y: 213
+          width: 153
+          height: 118
+        expanded: 0
+        debug: 0
+        nodeLock: 0
+        input: 0
+        yes: 0
+        no: 0
+        distance: 100

@@ -1,0 +1,11 @@
+{
+    "name": "com.buho.dctool",
+    "version": "1.0.0",
+    "displayName": "DCTool packages",
+    "description": "For project.",
+    "unity": "2023.2",
+    "author": {
+      "name": "Dave"
+    },
+    "dependencies": {}
+  }

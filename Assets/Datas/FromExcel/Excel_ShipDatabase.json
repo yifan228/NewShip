@@ -1,0 +1,23 @@
+{
+    "ShipDatas":
+    [
+        {
+            "KeyString": "BaseShip",
+            "Attributes": "None",
+            "WeaponHole": "1,4",
+            "UiPrefab": "BaseShipPage"
+        },
+        {
+            "KeyString": "TestShip1",
+            "Attributes": "None",
+            "WeaponHole": "1,6,8",
+            "UiPrefab": "TestShip1"
+        },
+        {
+            "KeyString": "TestShip2",
+            "Attributes": "None",
+            "WeaponHole": 4,
+            "UiPrefab": "TestShip2"
+        }
+    ]
+}

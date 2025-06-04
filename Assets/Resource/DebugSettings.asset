@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c35849d4bd764642b44fd8c128ffb30, type: 3}
   m_Name: DebugSettings
   m_EditorClassIdentifier: 
-  debugCategory: 32
+  debugCategory: -1

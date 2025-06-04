@@ -24,4 +24,6 @@ public interface IServerAgent
     /// <param name="callback"></param>
     /// <returns></returns>
     IEnumerator RequestDrop(string data,Action<bool,string> callback);
+
+    
 }

@@ -1,0 +1,65 @@
+{
+    "Datas":
+    [
+        {
+            "KeyString": "BaseShip",
+            "Desc_TW": "基礎船",
+            "Desc_En": "基礎船"
+        },
+        {
+            "KeyString": "TestShip1",
+            "Desc_TW": "測試用",
+            "Desc_En": "測試用"
+        },
+        {
+            "KeyString": "TestShip2",
+            "Desc_TW": "測試用",
+            "Desc_En": "測試用"
+        },
+        {
+            "KeyString": "BaseGun1",
+            "Desc_TW": "介紹BaseGun1",
+            "Desc_En": "介紹BaseGun1"
+        },
+        {
+            "KeyString": "BaseGun2",
+            "Desc_TW": "介紹BaseGun2",
+            "Desc_En": "介紹BaseGun2"
+        },
+        {
+            "KeyString": "BaseGun3",
+            "Desc_TW": "介紹BaseGun3",
+            "Desc_En": "介紹BaseGun3"
+        },
+        {
+            "KeyString": "BaseGun4",
+            "Desc_TW": "介紹BaseGun4",
+            "Desc_En": "介紹BaseGun4"
+        },
+        {
+            "KeyString": "BaseGun5",
+            "Desc_TW": "介紹BaseGun5",
+            "Desc_En": "介紹BaseGun5"
+        },
+        {
+            "KeyString": "BaseGun6",
+            "Desc_TW": "介紹BaseGun6",
+            "Desc_En": "介紹BaseGun6"
+        },
+        {
+            "KeyString": "BaseGun7",
+            "Desc_TW": "介紹BaseGun7",
+            "Desc_En": "介紹BaseGun7"
+        },
+        {
+            "KeyString": "BaseGun8",
+            "Desc_TW": "介紹BaseGun8",
+            "Desc_En": "介紹BaseGun8"
+        },
+        {
+            "KeyString": "BaseGun9",
+            "Desc_TW": "介紹BaseGun9",
+            "Desc_En": "介紹BaseGun9"
+        }
+    ]
+}

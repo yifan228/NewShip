@@ -1,0 +1,50 @@
+{
+    "WeaponDatas":
+    [
+        {
+            "KeyString": "BaseGun1",
+            "ImageName": "test_weapon1",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun2",
+            "ImageName": "test_weapon2",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun3",
+            "ImageName": "test_weapon3",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun4",
+            "ImageName": "test_weapon4",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun5",
+            "ImageName": "test_weapon5",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun6",
+            "ImageName": "test_weapon6",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun7",
+            "ImageName": "test_weapon7",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun8",
+            "ImageName": "test_weapon8",
+            "AttributeData": "None"
+        },
+        {
+            "KeyString": "BaseGun9",
+            "ImageName": "test_weapon9",
+            "AttributeData": "None"
+        }
+    ]
+}

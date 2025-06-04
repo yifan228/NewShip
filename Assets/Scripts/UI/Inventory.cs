@@ -14,7 +14,7 @@ public class Inventory : MonoBehaviour,Ipage
 
     private int currentPage = 0;
     private int totalPage = 0;
-    private List<string> dataSpriteNames;
+    private List<IdAndKeyString> datas;
 
     private Action<ItemBtn> onSelect;
     private Action<ItemBtn> onUnSelect;
@@ -34,15 +34,15 @@ public class Inventory : MonoBehaviour,Ipage
         }
     }
 
-    public void Init(List<string> spriteNames, Action<ItemBtn> onSelect, Action<ItemBtn> onUnSelect, Action<ItemBtn> onFocus){
-        dataSpriteNames = spriteNames;
+    public void Init(List<IdAndKeyString> datas, Action<ItemBtn> onSelect, Action<ItemBtn> onUnSelect, Action<ItemBtn> onFocus){
+        this.datas = datas;
         this.onSelect = onSelect;
         this.onUnSelect = onUnSelect;
         this.onFocus = onFocus;
         for(int i = 0; i < itemBtns.Count; i++){
             itemBtns[i].Init(OnSelect, OnUnSelect, onFocus);
         }
-        totalPage = CalculatePage(spriteNames.Count);
+        totalPage = CalculatePage(datas.Count);
         currentPage = 0;
         SetPage(currentPage);
     }
@@ -75,14 +75,14 @@ public class Inventory : MonoBehaviour,Ipage
         currentPage = page;
         int startIndex = currentPage * itemBtns.Count;
         int endIndex = startIndex + itemBtns.Count;
-        if(endIndex > dataSpriteNames.Count){
-            endIndex = dataSpriteNames.Count;
+        if(endIndex > datas.Count){
+            endIndex = datas.Count;
         }
         for(int i = 0; i < itemBtns.Count; i++){
-            if(startIndex + i < dataSpriteNames.Count){
-                itemBtns[i].SetData(dataSpriteNames[startIndex + i]);
+            if(startIndex + i < datas.Count){
+                itemBtns[i].SetData(datas[startIndex + i].KeyString,datas[startIndex + i].ID);
             }else{
-                itemBtns[i].SetData("empty");
+                itemBtns[i].SetData("empty","empty");
             }
         }
         if(pageText != null){
@@ -103,18 +103,17 @@ public class Inventory : MonoBehaviour,Ipage
     public void ChangeSelectedContent(ItemBtn itemBtn)
     {
         Debug.Log($"ChangeSelectedContent: {itemBtn.DataWithID}");
-        string spriteName = itemBtn.DataWithID;
-        selectedItem.SetData(spriteName);
+        selectedItem.SetData(itemBtn.KeyString,itemBtn.DataWithID);
     }
     public void Deselect(ItemBtn itemBtn){
         if(selectedItem != null && selectedItem == itemBtn){
-            selectedItem.SetData("empty");
+            selectedItem.SetData("empty","empty");
             selectedItem = null;
         }
     }
     public void Deselect(){
         if(selectedItem != null){
-            selectedItem.SetData("empty");
+            selectedItem.SetData("empty","empty");
             selectedItem = null;
         }
     }

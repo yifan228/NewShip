@@ -6,8 +6,13 @@ using System.Linq;
 
 public class FakeServerAgent : MonoBehaviour, IServerAgent
 {
-    [SerializeField] private List<PlayerData> playerDatas;
+    private List<PlayerData> playerDatas;
     private PlayerData playerData;
+
+    public void SetUpForTest(List<PlayerData> playerDatas,int playerDataIndex){
+        this.playerDatas = playerDatas;
+        playerData = playerDatas[playerDataIndex];
+    }
 
     public IEnumerator Login(string userId, Action<PlayerData> callback)
     {
@@ -18,7 +23,7 @@ public class FakeServerAgent : MonoBehaviour, IServerAgent
             playerDatas.Add(playerData);
         }
         // 給新的飛船
-        if(playerData.Ship == null || playerData.Ship.Count == 0)
+        if(playerData.Ships == null || playerData.Ships.Count == 0)
         {
             var initialShip = new ShipData
             {
@@ -27,7 +32,7 @@ public class FakeServerAgent : MonoBehaviour, IServerAgent
                 KeStr = "ship_001",
                 AwakeLevel = new List<string>()
             };
-            playerData.Ship.Add(initialShip);
+            playerData.Ships.Add(initialShip);
         }
         
         callback?.Invoke(playerData);
@@ -42,7 +47,7 @@ public class FakeServerAgent : MonoBehaviour, IServerAgent
         string shipId = data.Split(',')[0];
         string awakedata = data.Split(',')[1];
 
-        var shipData = playerData.Ship.FirstOrDefault(s => s.ID == shipId);
+        var shipData = playerData.Ships.FirstOrDefault(s => s.ID == shipId);
         if (shipData != null)
         {
             string awakepage = awakedata.Split('_')[0];
@@ -74,7 +79,7 @@ public class FakeServerAgent : MonoBehaviour, IServerAgent
         bool success = true;
         foreach (var ship in shipData)
         {
-            var existingShip = playerData.Ship.FirstOrDefault(s => s.ID == ship.ID);
+            var existingShip = playerData.Ships.FirstOrDefault(s => s.ID == ship.ID);
             if (existingShip == null)
             {
                 success = false;
@@ -82,7 +87,7 @@ public class FakeServerAgent : MonoBehaviour, IServerAgent
                 break;
             }
             // 更新裝備
-            existingShip.EquippedGunID = ship.EquippedGunID;
+            existingShip.EquippedWeaponID = ship.EquippedWeaponID;
             existingShip.EquippedBulleteID = ship.EquippedBulleteID;
         }
         callback?.Invoke(success);
@@ -95,14 +100,14 @@ public class FakeServerAgent : MonoBehaviour, IServerAgent
         bool success = false;
         string gunId = data.Split('_')[0];
         string scrollKeStr = data.Split('_')[1];
-        var weaponData = playerData.Weapon.FirstOrDefault(w => w.ID == gunId);
+        var weaponData = playerData.Weapons.FirstOrDefault(w => w.ID == gunId);
         if (weaponData != null)
         {
             // 模擬升級武器
             weaponData.ScrollKeStr.Add(scrollKeStr);
             success = true;
         }
-        callback?.Invoke(success);
+        callback?.Invoke(success);        
         yield return null;
     }
 

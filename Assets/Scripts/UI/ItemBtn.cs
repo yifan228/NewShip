@@ -15,8 +15,13 @@ public class ItemBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
     private Action<ItemBtn> onUnSelect;
     private Action<ItemBtn> onFocus;
     public string DataWithID{get; private set; }
+    public string KeyString{get; private set;}
     private bool canSelect = true;
 
+    public int Index{get; private set;}
+    public void SetIndex(int index){
+        Index = index;
+    }
     public void Init( Action<ItemBtn> onSelect, Action<ItemBtn> onUnSelect,Action<ItemBtn> onFocus)
     {
         this.onSelect = onSelect;
@@ -24,19 +29,22 @@ public class ItemBtn : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler,
         this.onFocus = onFocus;
     }
 
-    public void SetData(string spriteName)
+    public void SetData(string keyString,string id)
     {
-        if(spriteName == "empty"){
+        string imageName = "empty";
+        if(keyString == "empty"){
             canSelect = false;
         }else{
             canSelect = true;
+            imageName = TheGlobal.Instance.keyStrImageDatas.GetImageName(keyString);
+            if(imageName == "empty"){
+                Debugger.LogError(DebugCategory.UI,"Image not found: " + keyString);
+            }
         }
-        Sprite sprite = itemAtlas.GetSprite(spriteName);
-        if(sprite == null){
-            Debug.LogError("Sprite not found: " + spriteName);
-        }
+        Sprite sprite = itemAtlas.GetSprite(imageName);
         itemImage.sprite = sprite;
-        DataWithID = spriteName;
+        DataWithID = id;
+        KeyString = keyString;
     }
 
     public void OnPointerEnter(PointerEventData eventData)

@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f0e12b888a2b2949a539e21100cf5c2, type: 3}
+  m_Name: TestPlayerData
+  m_EditorClassIdentifier: 
+  UserId: test001
+  Level: 0
+  Gold: 0
+  Ships:
+  - ID: 00_001
+    Index: 0
+    KeStr: BaseShip
+    EquippedWeaponID:
+    - Position: 0
+      ID: 01_0001
+    EquippedBulleteID: []
+    AwakeLevel: []
+  - ID: 00_002
+    Index: 1
+    KeStr: TestShip1
+    EquippedWeaponID:
+    - Position: 0
+      ID: 01_0001
+    - Position: 0
+      ID: 01_0002
+    EquippedBulleteID: []
+    AwakeLevel: []
+  Weapons:
+  - ID: 01_0001
+    KeStr: BaseGun1
+  - ID: 01_0002
+    KeStr: BaseGun2
+  - ID: 01_0003
+    KeStr: BaseGun3
+  Bulletes: []

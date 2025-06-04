@@ -6,94 +6,85 @@ using System.Linq;
 public class ShipShowcase : MonoBehaviour, Ipage    
 {
     [SerializeField] private Button closeBtn;
-    [SerializeField] private ItemBtn Ship;
     [SerializeField] private Inventory Shipinventory;
     [SerializeField] private Inventory Weaponinventory;
-    [SerializeField] private Inventory WeaponShowcase;
-    [SerializeField] private List<string> weaponSpriteNames;
-    [SerializeField] private List<string> shipIds;
+
+    [Tooltip("for test")]
+    [SerializeField] private PlayerData testPlayerData;
+    [SerializeField] private List<GameObject> shipPages;
+    private ShipPage currentShipPage;
+    private ShipData currentShip;
 
     private Ipage currentOpenInventory;
-    private List<SelectedItem> selectedItems = new List<SelectedItem>();
 
-    private void Start(){
+    private void Start()
+    {
         closeBtn.onClick.AddListener(Close);
-        WeaponShowcase.Init(weaponSpriteNames, OnWeaponShowcaseSelect, OnWeaponShowcaseDeselect, OnItemFocas);
-        Ship.Init( OnShipSelect, OnShipDeselect, OnItemFocas);
-        Ship.SetData(shipIds[0]);
-    }   
+
+        BuildShipPage(testPlayerData.Ships[0]);
+    }
+
+    private void BuildShipPage(ShipData ship)
+    {
+        currentShip = ship;
+        string shipKeySting = ship.KeStr;
+
+        List<ShipWeaponData> weaponData = new List<ShipWeaponData>();
+        foreach (var weapon in ship.EquippedWeaponID)
+        {
+            weaponData.Add(testPlayerData.Weapons.Find(x => x.ID == weapon.ID));
+        }
+        Excel_ShipData target = TheGlobal.Instance.ShipExcelDatabase.ShipDatas.Find(x => x.KeyString == shipKeySting);
+        currentShipPage = shipPages.Find(x => x.name == target.UiPrefab).GetComponent<ShipPage>();
+        currentShipPage.Init(ship,testPlayerData.Weapons, OpenShipInventory, OpenWeaponInventory, OnItemFocas, OnShipDeselect, OnWeaponInventoryDeselect);
+        currentShipPage.Open();
+    }
 
     public void Close(){
         gameObject.SetActive(false);
         Shipinventory.Close();
         Weaponinventory.Close();
-        WeaponShowcase.Close();
     }
     public void Open(){
         gameObject.SetActive(true);
-        WeaponShowcase.Open();
     }
 
-    private void OnWeaponShowcaseSelect(ItemBtn itemBtn){
+    private void OpenWeaponInventory(){
         if(currentOpenInventory != null){
             currentOpenInventory.Close();
         }
         currentOpenInventory = Weaponinventory;
-
-        selectedItems.Where(x=>x.type == SelectedItemType.Ship).ToList().ForEach(x=>x.itemBtn.UnSelect());
-        selectedItems.Where(x=>x.type == SelectedItemType.ShipInventory).ToList().ForEach(x=>x.itemBtn.UnSelect());
-
-        Weaponinventory.Init(weaponSpriteNames, 
-        OnWeaponInventorySelect,
-        OnWeaponInventoryDeselect,
-        OnItemFocas);
+        Weaponinventory.Init(testPlayerData.Weapons.Select(x=>new IdAndKeyString{ID = x.ID,KeyString = x.KeStr}).ToList(), OnWeaponInventorySelect, OnWeaponInventoryDeselect, OnItemFocas);
         Weaponinventory.Open();
-        selectedItems.Add(new SelectedItem{type = SelectedItemType.WeaponShowcase, itemBtn = itemBtn});
     }
-    private void OnWeaponShowcaseDeselect(ItemBtn itemBtn){
-        Weaponinventory.Close();
-        WeaponShowcase.Deselect(itemBtn);
-        currentOpenInventory = null;
-        selectedItems.Remove(selectedItems.Find(x=>x.type == SelectedItemType.WeaponShowcase && x.itemBtn == itemBtn));
-    }
-
     private void OnWeaponInventorySelect(ItemBtn itemBtn){
-        WeaponShowcase.ChangeSelectedContent(itemBtn);
+        currentShipPage.ChangeSelectedWeaponContent(itemBtn.KeyString,itemBtn.DataWithID);
     }
     private void OnWeaponInventoryDeselect(ItemBtn itemBtn){
         Weaponinventory.Deselect(itemBtn);
-        selectedItems.Remove(selectedItems.Find(x=>x.type == SelectedItemType.WeaponInventory && x.itemBtn == itemBtn));
+        currentShipPage.ChangeSelectedWeaponContent("empty","empty");
     }
     private void OnItemFocas(ItemBtn itemBtn){
         
     }
 
-    private void OnShipSelect(ItemBtn itemBtn){
+    private void OpenShipInventory(){
         if(currentOpenInventory != null){
             currentOpenInventory.Close();
         }
         currentOpenInventory = Shipinventory;
 
-        selectedItems.Where(x=>x.type == SelectedItemType.WeaponShowcase).ToList().ForEach(x=>x.itemBtn.UnSelect());
-        selectedItems.Where(x=>x.type == SelectedItemType.WeaponInventory).ToList().ForEach(x=>x.itemBtn.UnSelect());
-
-        Shipinventory.Init(shipIds, OnShipInventorySelect, OnShipInventoryDeselect, OnItemFocas);
+        Shipinventory.Init(testPlayerData.Ships.Select(x=>new IdAndKeyString{ID = x.ID,KeyString = x.KeStr}).ToList(), OnShipInventorySelect, OnShipInventoryDeselect, OnItemFocas);
         Shipinventory.Open();
-        selectedItems.Add(new SelectedItem{type = SelectedItemType.Ship, itemBtn = itemBtn});
     }
     private void OnShipDeselect(ItemBtn itemBtn){
         Shipinventory.Close();
-        Ship.JustUnSelect();
-        currentOpenInventory = null;
-        selectedItems.Remove(selectedItems.Find(x=>x.type == SelectedItemType.Ship && x.itemBtn == itemBtn));
     }
     private void OnShipInventorySelect(ItemBtn itemBtn){
-        Ship.SetData(itemBtn.DataWithID);
-        selectedItems.Add(new SelectedItem{type = SelectedItemType.ShipInventory, itemBtn = itemBtn});
+        ChangeShipPage(itemBtn.DataWithID);
     }
     private void OnShipInventoryDeselect(ItemBtn itemBtn){
         Shipinventory.Deselect(itemBtn);
-        selectedItems.Remove(selectedItems.Find(x=>x.type == SelectedItemType.ShipInventory && x.itemBtn == itemBtn));
     }
 
     private enum SelectedItemType{
@@ -105,5 +96,17 @@ public class ShipShowcase : MonoBehaviour, Ipage
     private class SelectedItem{
         public SelectedItemType type;
         public ItemBtn itemBtn;
+    }
+
+    private void ChangeShipPage(string id){
+        ShipData shipData = testPlayerData.Ships.Find(x=>x.ID == id);
+        if(shipData == null){
+            Debugger.LogError(DebugCategory.UI,"ShipData not found");
+            return;
+        }
+        if(currentShipPage != null){
+            currentShipPage.Close();
+        }
+        BuildShipPage(shipData);
     }
 }

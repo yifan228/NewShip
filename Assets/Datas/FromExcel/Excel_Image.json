@@ -1,0 +1,53 @@
+{
+    "Datas":
+    [
+        {
+            "KeyString": "BaseGun1",
+            "ImageName": "test_weapon1"
+        },
+        {
+            "KeyString": "BaseGun2",
+            "ImageName": "test_weapon2"
+        },
+        {
+            "KeyString": "BaseGun3",
+            "ImageName": "test_weapon3"
+        },
+        {
+            "KeyString": "BaseGun4",
+            "ImageName": "test_weapon4"
+        },
+        {
+            "KeyString": "BaseGun5",
+            "ImageName": "test_weapon5"
+        },
+        {
+            "KeyString": "BaseGun6",
+            "ImageName": "test_weapon6"
+        },
+        {
+            "KeyString": "BaseGun7",
+            "ImageName": "test_weapon7"
+        },
+        {
+            "KeyString": "BaseGun8",
+            "ImageName": "test_weapon8"
+        },
+        {
+            "KeyString": "BaseGun9",
+            "ImageName": "test_weapon9"
+        },
+        {
+            "KeyString": "BaseShip",
+            "ImageName": "Ships_0"
+        },
+        {
+            "KeyString": "TestShip1",
+            "ImageName": "Ships_1"
+        },
+        {
+            "KeyString": "TestShip2",
+            "ImageName": "Ships_2"
+        }
+    ]
+}
